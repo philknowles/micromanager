@@ -1,0 +1,23 @@
+.container {
+  display: block;
+  margin-top: 100px;
+  max-width: 490px;
+  background-color: #202025;
+  color: #fff; }
+
+.task-list .row:nth-child(odd) {
+  background: #737672;
+  color: #fff; }
+
+.task-list .row:nth-child(even) {
+  background: #888B73;
+  color: #fff; }
+
+.btn-add {
+  background: #51565A;
+  color: #fff; }
+
+.task-list a {
+  color: #fff; }
+
+/*# sourceMappingURL=main.css.map */
