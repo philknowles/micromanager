@@ -8,23 +8,37 @@
     <link ref="stylesheet" href="../static/css/main.css" />
 </head>
 <body>
-    <div class="container bg-warning pb-5 rounded">
-        <h2>Add a Task</h2>
-        <form action="#" method="post" class="row">
-                <div class="col-lg-9">
+    <div class="container pb-2 pr-0 pl-0">
+        <h4 class="pb-3">Micro Management</h4>
+        <div class="container-fluid pt-1 pr-4 pl-4">
+            <form action="{% url 'add' %}" method="post" class="row mb-3">
+                <div class="input-group mb-1">
                     <input type="text" name="task" class="form-control" />
                 </div>
-                <div class="col-lg-3 pr-5">
-                    <input type="submit" name="add-task" value="Add Task" class="btn btn-success">
+                <div class="input-group-append">
+                    <input type="submit" name="add-task" value="Add Task" class="btn btn-add">
                 </div>
         </form>
 
-        <div class="row mt-5">
-            <div class="col-lg-2">
-                <span class="fa fa-square fa-fw"></span>
+        <div class="task-list">
+            <div class="row">
+                <div class="col-lg-2">
+                    <a href="#" class="fa fa-check-circle-o"></a>
+                </div>
+                <div class="col-lg-8">
+                    <span>A simple Task</span>
+                </div>
+                <div class="col-lg-2 text-right">
+                    <a href="#" class="fa fa-trash-o"></a>
+                </div>
             </div>
-            <div class="col-lg-10">
-                <span>This is a sample task</span>
+            <div class="row">
+                <div class="col-lg-2">
+                    <a href="#" class="fa fa-circle-o"></a>
+                </div>
+                <div class="col-lg-10">
+                    <span>A simple Task</span>
+                </div>
             </div>
         </div>
     </div>
